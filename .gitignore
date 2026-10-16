@@ -1,0 +1,23 @@
+# Arquivos PDF
+*.pdf
+
+# Arquivos compactados
+*.zip
+*.rar
+*.7z
+
+# Arquivos temporários do Windows
+Thumbs.db
+Desktop.ini
+
+# Arquivos de sistema e logs
+*.log
+.DS_Store
+
+# Dependências JavaScript
+node_modules/
+
+# Arquivos com informações sensíveis
+.env
+.env.*
+!.env.example
