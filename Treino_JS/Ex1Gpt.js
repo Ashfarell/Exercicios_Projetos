@@ -359,3 +359,5 @@ function encontrarProdutoMaisCaroB(lista) {
 console.log(encontrarProdutoMaisCaroB(produtos1));
 
 console.log('FIM EX4 ------------------------------------------------------------------REDUCE');
+
+

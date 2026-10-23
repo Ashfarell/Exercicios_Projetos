@@ -1,0 +1,128 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.camposLogin {
+  border: 20px solid black;
+  /* width: 30%; */
+}
+
+.emailUser {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  margin: 20px;
+}
+
+.senhaUser {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  margin: 20px;
+}
+
+.camposAtividade {
+  border: 20px solid black;
+}
+
+.atividade {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+.addAtv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+.cancelAtv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+.atividades {
+  display: flex;
+}
+
+.atividades #selecaoAtv,
+.atividades #resumoAtividades {
+  flex: 1;
+  padding: 10px;
+  background-color: aqua;
+}
+
+#selecaoAtv {
+  border: 10px solid black;
+  flex: 1;
+}
+
+#resumoAtividades {
+  border: 10px solid black;
+  flex: 1;
+  display: none;
+}
+
+.campoInvalido {
+  border: 2px solid red;
+}
+
+.campoComErro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#msgErro {
+  color: red;
+  margin: 5px 0 0;
+}
+
+.loginInvalido {
+  border: 2px solid red;
+}
+
+.loginConteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.camposLogin,
+.campoLoginRealizado {
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.camposLogin {
+  border: 2px solid black;
+}
+
+.campoLoginRealizado {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  color: blue;
+}
+
+/* PARA TACHAR ATIVIDAE CONCLUÍDA */
+
+.atv1 {
+  text-decoration: line-through;
+}
+
+.dadosLoginRealizado {
+  white-space: pre-line;
+}

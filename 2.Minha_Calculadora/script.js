@@ -8,6 +8,8 @@ let apagarResultado = document.getElementById('apagarResultado');
 let listaResultados = document.getElementById('listaResultados');
 let copiarResultado = document.getElementById('copiarResultado');
 // let resultadoAtual = document.getElementById('resultadoAtual');
+let hora = document.getElementById('hora');
+let campoTeste = document.getElementById('campoTeste');
 
 let textoResultado; //DECLARADA FORA P/ SER USADA TAMBÉM NA FUNÇÃO apagarResultado()
 let contador = 0; //Para o HISTÓRICO DE RESULTADO
@@ -109,4 +111,44 @@ copiarResultado.addEventListener('click', function () {
   hist = document.createElement('p');
   hist.textContent = `Resultado ${contador}: ${ultimoResultado} `;
   listaResultados.appendChild(hist);
+});
+
+// *Como criar uma lista ARRAY na página? ?????????????
+
+// let lista = ['carro', 'moto', 'barco'];
+// let ul = lista.createElement('ul');
+// botaoCalcular.addEventListener('click', function () {
+//   lista.forEach((item) => {
+//     let li = document.createElement('li');
+//     li.innerText = item.toUpperCase();
+//     ul.appendChild(li);
+//   });
+// });
+
+function mostrarHora() {
+  let data = new Date();
+  dia = document.createElement('p');
+  dia.textContent = `Hoje é ${data}`;
+  hora.appendChild(dia);
+}
+
+// TESTE -----------CAPTURAR ELEMENTOS DAS TECLAS
+document.addEventListener('keydown', function (event) {
+  console.log(`Pressionou: ${event.key}`);
+});
+
+campo1.addEventListener('keyup', function (event) {
+  console.log(`Soltou ${event.key}`);
+});
+
+function sendMessage() {
+  let textSanitized = text.trim();
+  if (textSanitized.length > 0) console.log(textSanitized);
+}
+
+campoTeste.addEventListener('keyup', function (event) {
+  if (event.key.toLocaleLowerCase() == 'enter') {
+    sendMessage(this.campoTeste.value);
+    input.value = '';
+  }
 });

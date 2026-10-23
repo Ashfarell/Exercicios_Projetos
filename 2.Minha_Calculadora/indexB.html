@@ -48,7 +48,7 @@
           <input type="number" id="campo2" placeholder="Digite o segundo valor" />
 
           <label for="botaoCalcular">Calcular</label>
-          <input type="button" id="botaoCalcular" value="Clique aqui" />
+          <input type="button" id="botaoCalcular" value="Clique aqui" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'"/>
         </div>
       </div>
 
@@ -69,6 +69,15 @@
       </div>
     </div>
      </div>
+
+     <!-- TESTE ONCLICK,..... -->
+<div id="hora" style="color:red" ></div>
+<br/>
+
+     <button onclick="mostrarHora()" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'">Hora</button>
+<br/>
+<label for="campoTeste"></label>
+<input type="text" id="campoTeste"/>
 
     <script src="script.js"></script>
   </body>

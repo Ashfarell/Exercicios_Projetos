@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Minha lista de tarefas</h1>
+
+    <div class="login">
+      <h2>Login</h2>
+
+      <div class="loginConteudo">
+        <div class="camposLogin">
+          <div class="emailUser">
+            <label for="usuario">Email usuário:</label>
+            <input type="email" id="emailUser" placeholder="Preencha seu usuário" />
+          </div>
+
+          <div class="senhaUser">
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" placeholder="Preencha sua senha" />
+          </div>
+          <label for="botaoEnviarLogin"></label>
+          <button id="botaoEnviarlogin" type="submit">Confirmar dados</button>
+        </div>
+      </div>
+    </div>
+    <div class="atividades">
+      <div class="selecaoAtv" id="selecaoAtv">
+        <h2>Atividades</h2>
+        <h4>Preenchimento atividades</h4>
+        <div class="atividade" id="atividade">
+          <label for="">Digite sua atividade</label>
+          <div class="campoComErro">
+            <input type="text" id="digiteAtividade" />
+            <p id="msgErro" hidden>Por favor preencha o campo</p>
+          </div>
+        </div>
+
+        <label for="adicionarAtividade"></label>
+        <button id="adicionarAtividade" type="submit">Adicionar atividade</button>
+      </div>
+
+      <div class="resumoAtividades" id="resumoAtividades">
+        <h3>Atividades adicionadas</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
