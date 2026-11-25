@@ -720,3 +720,43 @@ const calcularDobro2 = (numero) => {
   return numero * 2;
 };
 console.log(calcularDobro2(10));
+
+console.log(
+  'FIM EX19PT2------------------------------------------------------------------------------------------------------------------'
+);
+
+// EX20 — Promise: resolve e reject
+// Imagine que estamos tentando cadastrar um produto. O cadastro pode dar certo ou apresentar um erro.
+function cadastrarProduto(nome) {
+  return new Promise((resolve, reject) => {
+    if (nome) {
+      resolve('Produto cadastrado: ' + nome);
+    } else {
+      reject('Nome do produto não informado!');
+    }
+  });
+}
+// Entenda estas duas possibilidades:
+// 1. resolve() representa o sucesso da operação.
+// 2. reject() representa uma falha na operação.
+
+let lista = [10, 20, 30, 50];
+let total = 0;
+lista.forEach((item, i) => {
+  total += item;
+  i++;
+  // console.log(i);
+  console.log(total);
+});
+
+function totalForEach(lista) {
+  let total = 0;
+  lista.forEach((item) => (total += item));
+  return total;
+}
+console.log(totalForEach(lista));
+
+const TestCalcular = () => {
+  return 10 * 2;
+};
+console.log(TestCalcular());

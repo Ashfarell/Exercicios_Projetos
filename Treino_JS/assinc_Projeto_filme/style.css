@@ -1,0 +1,37 @@
+#titulo {
+  color: red;
+}
+
+#botao {
+  color: red;
+  width: 20%;
+}
+
+.campoBotao {
+  color: blue;
+}
+
+.card-filme {
+  border: 1px solid gray;
+  color: blue;
+}
+
+.card-filme h3 {
+  margin-bottom: 0;
+}
+
+.card-filme p {
+  margin-top: 0;
+}
+
+.poster {
+  border: 1px solid black;
+  padding: 20px;
+  /* width: 200px; */
+  height: auto;
+  width: 200px;
+}
+
+#campoErro {
+  color: red;
+}

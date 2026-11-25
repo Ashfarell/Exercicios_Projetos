@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Movie finder</h1>
+
+    <div id="main">
+      <form id="formulario">
+        <label for="nomeFilme">Filme:</label>
+        <input type="text" id="nomeFilme" placeholder="digite o nome do filme" />
+        <br />
+        <br />
+        <label for="botao" class="campoBotao"></label>
+        <button type="submit" id="botao">Pesquisar</button>
+      </form>
+
+      <p id="mensagem"></p>
+    </div>
+
+    <div id="resultados">
+      <h3>Resultados</h3>
+      <div id="lista-filmes"></div>
+    </div>
+
+    <script src="script_thencatch.js"></script>
+  </body>
+</html>

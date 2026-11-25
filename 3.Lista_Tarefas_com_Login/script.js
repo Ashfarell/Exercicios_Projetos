@@ -12,10 +12,11 @@ let login = document.querySelector('.login');
 let loginConteudo = document.querySelector('.loginConteudo');
 let contador = 0;
 
-// 1)Criar espaço entre os botões criados (concluir e exluir)
-// 2)se concluir atividade ==>deixar texto tachado
+// 1)Criar espaço entre os botões criados (concluir e exluir)     -OK
+// 2)se concluir atividade ==>deixar texto tachado                -OK
 // 3)Se excluir atividade ==>remover o campo
-// 4)Cruzar login com DB
+// 4)Cruzar login com DB                                    -n/ está mostrando msg de login incorreto
+// 5)Criar campo com % de atv em aberto x concluída
 
 // BLOCO P/ VERIFICAR CAMPOS PREENCHIDOS LOGIN
 botaoEnviarlogin.addEventListener('click', function () {
@@ -56,6 +57,7 @@ adicionarAtividade.addEventListener('click', function () {
     resumoAtividades.append(excluir); //             PQ USEI APPEND()?????
 
     //              CONCLUIR (TAXAR) ==>DESFAZER ATIVIDADE (DESTAXAR)
+    //              1 ÚNICO EVENTO PARA TAXAR E TIRAR TAXA
     concluir.addEventListener('click', function () {
       if (concluir.textContent === 'Concluir atividade') {
         concluir.textContent = 'Desfazer';
@@ -67,10 +69,12 @@ adicionarAtividade.addEventListener('click', function () {
         atv1.classList.remove('atv1');
       }
     });
-    // BLOCO PARA EXCLUIR ATIVIDADE
-    // atv1.remove();
-    // concluir.remove();
-    // excluir.remove();
+    //            BLOCO PARA EXCLUIR ATIVIDADE
+    excluir.addEventListener('click', function () {
+      atv1.remove();
+      concluir.remove();
+      excluir.remove();
+    });
   }
 });
 
