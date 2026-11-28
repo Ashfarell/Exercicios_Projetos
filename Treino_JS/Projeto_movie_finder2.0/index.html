@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bem vindo ao Movie Finder 2.0</h1>
+    <form id="formulario">
+      <div id="bloco-principal">
+        <label for="pesquisarNome">Pesquise pelo nome:</label>
+        <input type="text" id="pesquisarNome" placeholder="Digite aqui..." />
+
+        <label for="pesquisaGenero">Pesquise pelo genêro:</label>
+        <input type="text" id="pesquisaGenero" />
+
+        <label for="botao"></label>
+        <button type="submit" id="botao">Buscar</button>
+      </div>
+    </form>
+
+    <div id="resultados">
+      <div id="resultadosApi"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
